@@ -1,7 +1,7 @@
 from random import randint
 
-Linhas = 3
-Colunas = 7
+Linhas = 5
+Colunas = 4
 L = 0
 C = 0
 M = []
