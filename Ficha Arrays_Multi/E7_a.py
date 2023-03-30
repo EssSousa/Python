@@ -1,3 +1,6 @@
+from os import system
+from random import randint
+system('cls')
 '''
 Exemplos:
 
@@ -13,29 +16,18 @@ Carlos 18,16,14   17,15,13   16,16,13
 Alinhar os nomes pela ultima letra
 '''
 
-from random import randint
-
 # -------------- variaveis --------------------
-nome = ""
 disc = 0
 AL = 0
 nome_disc = ["PSI", "PORT", "MAT"]
 notas_disc_AL = []
-nome_alunos = []
+nome_alunos = ["Ana", "Carlos", "Helena", "Ilídio", "Joana", "Luís"]
 media_disc_AL = []
+media = 0
+exame = 0
+tot = 0
 
 # ---------------------------------------------
-
-for AL in range(6):
-    nome = str(input("Nome do Aluno: "))
-    nome_alunos.append(nome)
-
-
-for AL in range(6):
-    media_disc_AL.append([])
-    for disc in range(3):
-        media_disc_AL[AL].append(randint(0, 20))
-
 
 for AL in range(6):
     notas_disc_AL.append([])
@@ -46,3 +38,14 @@ for AL in range(6):
             if N > 20:
                 N = N - 11
             notas_disc_AL[AL][disc].append(N)
+
+for AL in range(6):
+    media_disc_AL.append([])
+    for disc in range(3):
+        media_disc_AL[AL].append([])
+        tot = 0
+        for exame in range(3):
+            tot = notas_disc_AL[AL][disc][exame] + tot
+        media = tot // 3
+        media_disc_AL[AL][disc].append(media)
+
