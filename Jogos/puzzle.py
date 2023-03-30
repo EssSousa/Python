@@ -149,4 +149,3 @@ if jogo == solucao:
     print('Parabéns! Concluido com {}'.format(mov))
 
 
-      

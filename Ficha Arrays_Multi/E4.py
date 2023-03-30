@@ -17,3 +17,10 @@ for D in range(Dimensao):
         M[D].append([])
         for C in range(Colunas):
             M[D][L].append(randint(-50, 50))
+
+for D in range(1, Dimensao+1):
+    print('{}º Dimensão'.format(D))
+    for L in range(Linhas):
+        for C in range(Colunas):
+            print(M[D-1][L])
+    print()
