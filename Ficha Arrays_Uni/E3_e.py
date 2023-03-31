@@ -22,4 +22,4 @@ for posi in range(0, 30):
     if valores[posi] <= 10 and valores[posi] >= -10:
         total = total + 1
 
-print('Existem {} números entre -10 e 10')
+print('Existem {} números entre -10 e 10'.format(total))

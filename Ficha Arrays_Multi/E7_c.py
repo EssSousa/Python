@@ -49,8 +49,10 @@ for AL in range(6):
         media = tot // 3
         media_disc_AL[AL][disc].append(media)
 
+print(notas_disc_AL)
+
 print('Nome do aluno(a): Helena')
 for AL in range(3):
-    print('{}'.format(nome_disc[AL]))
+    print('{}:'.format(nome_disc[AL]))
     for disc in range(3):
-        print('{}º exame: {}'.format(disc+1, notas_disc_AL[AL][disc]))
+        print('{}'.format(notas_disc_AL[AL][AL][disc]))

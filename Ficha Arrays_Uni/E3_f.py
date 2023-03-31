@@ -20,4 +20,4 @@ total = 0
 for posi in range(0, 30):
     if valores[posi] >= 0 and valores[posi] % 3 == 0:
         total = total + 1
-print('Existem {} números divisiveis por 3 e positivos')
+print('Existem {} números divisiveis por 3 e positivos'.format(total))
