@@ -1,6 +1,5 @@
 from os import system
 from random import randint
-from pyconio import * 
 system('cls')
 '''
 Exemplos:
@@ -27,6 +26,7 @@ media_disc_AL = []
 media = 0
 exame = 0
 tot = 0
+verificar = 0
 
 # ---------------------------------------------
 
@@ -40,18 +40,31 @@ for AL in range(6):
                 N = N - 11
             notas_disc_AL[AL][disc].append(N)
 
+for AL in range(6):
+    media_disc_AL.append([])
+    for disc in range(3):
+        media_disc_AL[AL].append([])
+        tot = 0
+        verificar = 0
+        for exame in range(3):
+            if notas_disc_AL[AL][disc][exame] <= 9:
+                verificar = 1
+            tot += notas_disc_AL[AL][disc][exame]
+        if verificar == 1:
+            media = -1
+        else:
+            media = tot // 3
+        media_disc_AL[AL][disc].append(media)
+
+
 
 for AL in range(6):
-    textcolor(Red)
-    print('Nome do Aluno: ', end="")
-    textcolor(White)
-    print('{}'.format(nome_alunos[AL]))
-    textcolor(Yellow)
-    print('Nota de Português: ')
+    print('Nome do aluno(a): {}'.format(nome_alunos[AL]))
     for disc in range(3):
-        textcolor(Blue)
-        print('{}º teste: '.format(disc+1), end="")
-        textcolor(White)
-        print('{}'.format(notas_disc_AL[AL][2][disc]))
-    print()
+        print('{}:'.format(nome_disc[disc][0:3]), end=" ")
+        if media_disc_AL[AL][disc][0] == -1:
+            print('---', end=" ")
+        else:
+            print('{}'.format(media_disc_AL[AL][disc][0]), end="")
+        print()
     print()

@@ -2,18 +2,15 @@ from os import system
 from random import randint
 system('cls')
 
-Dimensao = 3
-Linhas = 5
-Colunas = 4
-D = 0
-L = 0
+A = 0
+B = 0
 C = 0
 M = []
 
 # iniciar a matriz com zeros
-for D in range(Dimensao):
+for A in range(5):
     M.append([])
-    for L in range(Linhas):
-        M[D].append([])
-        for C in range(Colunas):
-            M[D][L].append(randint(-50, 50))
+    for B in range(4):
+        M[A].append([])
+        for C in range(3):
+            M[A][B].append(randint(10, 99))

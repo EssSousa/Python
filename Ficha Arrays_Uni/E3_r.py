@@ -15,6 +15,6 @@ while posi <= 29:
             posi = posi + 1
 
 # -------------------------------------------
-for posi in range(27):
+for posi in range(1, len(valores) -1):
     if valores[posi-1] < valores[posi] and valores[posi+1] < valores[posi]:
-        print(valores[posi])
+        print('Posição: {} - Nº: {}'.format(posi, valores[posi]))

@@ -31,8 +31,6 @@ for AL in range(6):
     for disc in range(3):
         media_disc_AL[AL].append(randint(0, 20))
 
-
-
 for AL in range(6):
     notas_disc_AL.append([])
     for disc in range(3):
@@ -46,12 +44,3 @@ for AL in range(6):
 print(nome_disc)
 print(nome_alunos)
 print(notas_disc_AL)
-
-
-
-# --------------------------------
-#for AL in range(6):
-#    print('{}:'.format(nome_alunos[AL]))
-#    for disc in range(3):
-#        print('{} - {}'.format(nome_disc[disc], media_disc_AL[AL][disc]))
-#    print()
