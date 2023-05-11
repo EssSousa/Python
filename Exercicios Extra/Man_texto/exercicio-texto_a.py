@@ -18,5 +18,8 @@ print('--------------------------------')
 # ler o texto
 texto = str(input('Digite o texto desejado: '))
 
+# a)
 # imprimir 
 print('Texto em maisculas: {}'.format(texto.upper()))
+
+# b=

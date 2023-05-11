@@ -17,6 +17,12 @@ while len(txt) < 3 or len(txt) > 10:
     print('Numero de caracteres incorreto')
     txt = str(input('Introduza o texto: '))
 
-# imprimir
-for i in range(i, len(txt)):
+# imprimir a)
+for i in range(len(txt)):
+    print(txt[i])
+
+print('------------------------')
+
+# imprimir b)
+for i in range(len(txt)-1, -1, -1):
     print(txt[i])
