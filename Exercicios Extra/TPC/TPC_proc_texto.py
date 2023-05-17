@@ -19,14 +19,13 @@ def proc_subtext(txt, subtext, posi=0, sensitive=True):
         subtext = subtext.lower()
 
     for i in range(posi, len(txt)):
-        if txt[i] == subtext[i]:
-            txtsub = txt[i]
+        if txt[i] == subtext[0]:
+            txtsub += txt[i]
         else:
             txtsub = ''
         if txtsub == subtext:
-            return i-len(txtsub)
+            return i - len(txtsub) + 1
 
     return -1
 
-
-proc_subtext("Maria","ri",0, False)
+print(proc_subtext("Maria","ri",0, False))

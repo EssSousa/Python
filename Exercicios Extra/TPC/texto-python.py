@@ -41,7 +41,7 @@ print('\n----------------------------\n')
 # juntar os caracteres impares do 1º com os pares do 2º
 
 
-print(txtExtra)
+print(txt3)
 print('\n----------------------------\n')
 
 
@@ -49,4 +49,4 @@ print('\n----------------------------\n')
 # c)
 # juntar os 2 primeiros caracteres do 1º com os 2 ultimos do 2º
 while txt1_extra != "" and txt2_extra != "":
-    
+    pass

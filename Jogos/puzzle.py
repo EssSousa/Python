@@ -104,7 +104,6 @@ while game == 1 or jogo != solucao:
                 gotoxy(10,15)
                 print('Movimentos: {}'.format(mov))
                 gotoxy(10, 17)
-                print('PARAAAAA CIIMMAAAAAAAAAAAAAA!!!!!!')
         else:
             if tecla in baixo:
                 if espaco_x > 0:
@@ -116,10 +115,9 @@ while game == 1 or jogo != solucao:
                     print('Movimentos: {}'.format(mov))
                     imprimir_tabuleiro(jogo, 21, 7)
                     gotoxy(10, 17)
-                    print('PARAAAAA BAAAIIIIXXOOOUUUU!!!!!!')
             else:
                 if tecla in dire:
-                     if espaco_y > 0:
+                    if espaco_y > 0:
                         jogo[espaco_x][espaco_y] = jogo[espaco_x][espaco_y - 1]
                         espaco_y -= 1
                         jogo[espaco_x][espaco_y] = 0
@@ -147,5 +145,3 @@ while game == 1 or jogo != solucao:
 if jogo == solucao:
     gotoxy(10, 19)
     print('Parabéns! Concluido com {}'.format(mov))
-
-

@@ -6,13 +6,13 @@ e que posteriormente imprima esse texto sem os caracteres minusculos
 
 # variaveis
 txt = ''
-txtMaius = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 txtFinal = ''
+f = 0
 
 txt = input('texto: ')
 
-for i in range(0, len(txt)):
-    if txt[i] in txtMaius:
-        txtFinal += txt[i]
+for f in range(0, len(txt)):
+    if txt[f]:
+        txtFinal += txt[f]
 
 print(txtFinal)
